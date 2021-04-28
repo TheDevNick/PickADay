@@ -4,24 +4,24 @@ document.querySelector('#check').addEventListener('click', color)
 
 function check() {
   
-    let day = document.querySelector('#day').value
+    let day = document.querySelector('#day').value.toLowerCase()
 
   //Conditionals go here
-  if(day === 'Monday' || day === "Thursday") {
+  if(day === 'monday' || day === "thursday") {
     document.getElementById('placeToSee').innerHTML = `Today is class day`
-  } else if (day === 'Tuesday') {
+  } else if (day === 'tuesday') {
     document.getElementById('placeToSee').innerHTML = `Today is boring day`
   }
 }
 
 function color() {
   
-    let day = document.querySelector('#day').value
+    let day = document.querySelector('#day').value.toLowerCase()
 
   //Conditionals go here
-  if(day === 'Saturday' || day === "Friday") {
+  if(day === 'saturday' || day === "friday") {
     document.getElementById('placeToSee').innerHTML = `Study Day`
-  } else if (day === 'Sunday') {
+  } else if (day === 'sunday') {
     document.getElementById('placeToSee').innerHTML = `Today is relax day`
     document.querySelector('body').style.backgroundColor = '#8e44ad'
     document.querySelector('h2').style.color = '#fff'
